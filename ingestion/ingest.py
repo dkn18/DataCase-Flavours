@@ -4,8 +4,8 @@ import os
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))  # folder where this script lives
 
 RAW = os.path.join(SCRIPT_DIR, "..", "raw")        # raw folder is one level up
-PROC = os.path.join("processed") # output processed files
-AUDIT_LOG = os.path.join(PROC, "audit_log.csv")
+PROC = os.path.join(SCRIPT_DIR, "..", "processed") # processed folder alongside raw
+AUDIT_LOG = os.path.join(PROC, "audit_log.csv")    # audit log path
 
 os.makedirs(PROC, exist_ok=True)
 
