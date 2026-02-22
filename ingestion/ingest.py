@@ -1,7 +1,9 @@
 import pandas as pd
 import os
 
-RAW = os.path.join("raw")        # input files
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))  # folder where this script lives
+
+RAW = os.path.join(SCRIPT_DIR, "..", "raw")        # raw folder is one level up
 PROC = os.path.join("processed") # output processed files
 AUDIT_LOG = os.path.join(PROC, "audit_log.csv")
 
