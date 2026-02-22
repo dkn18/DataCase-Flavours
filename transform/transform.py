@@ -4,7 +4,7 @@ import os
 # ------------------ Setup Paths ------------------
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))  # Current folder
 PROC = os.path.join(SCRIPT_DIR, "..", "processed")      # Processed folder (one level up)
-WAREHOUSE = os.path.join(SCRIPT_DIR, "warehouse")       # Warehouse folder
+WAREHOUSE = os.path.join(SCRIPT_DIR, "..", "warehouse") # Warehouse folder (one level up)
 os.makedirs(WAREHOUSE, exist_ok=True)
 
 # ------------------ Load Processed Files ------------------
