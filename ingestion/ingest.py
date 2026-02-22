@@ -7,6 +7,9 @@ RAW = os.path.join(SCRIPT_DIR, "..", "raw")        # raw folder is one level up
 PROC = os.path.join(SCRIPT_DIR, "..", "processed") # processed folder alongside raw
 AUDIT_LOG = os.path.join(PROC, "audit_log.csv")    # audit log path
 
+# make sure processed folder exists
+os.makedirs(PROC, exist_ok=True)
+
 audit_rows = []
 
 for file in os.listdir(RAW):
