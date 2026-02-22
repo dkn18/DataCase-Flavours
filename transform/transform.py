@@ -2,15 +2,14 @@ import pandas as pd
 import os
 
 # ------------------ Setup Paths ------------------
-SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))  # Current folder
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))  # Current folder (transform/)
 PROC = os.path.join(SCRIPT_DIR, "..", "processed")      # Processed folder (one level up)
 WAREHOUSE = os.path.join(SCRIPT_DIR, "..", "warehouse") # Warehouse folder (one level up)
-os.makedirs(WAREHOUSE, exist_ok=True)
+os.makedirs(WAREHOUSE, exist_ok=True)                   # Create warehouse if missing
 
 # ------------------ Load Processed Files ------------------
 dfs = {}  # Dictionary to hold all processed dataframes
 
-# Loop over all CSVs in processed folder
 for file in os.listdir(PROC):
     if file.endswith("_proc.csv"):
         path = os.path.join(PROC, file)
@@ -22,7 +21,6 @@ for file in os.listdir(PROC):
             print(f"Failed to load {file}: {e}")
 
 # ------------------ Helper: safe get ------------------
-# Returns empty dataframe if a processed file is missing
 def get_df(name):
     return dfs.get(name, pd.DataFrame())
 
@@ -75,4 +73,4 @@ if not sales.empty:
     fact_sales = sales
     fact_sales.to_csv(os.path.join(WAREHOUSE, "fact_sales.csv"), index=False)
 
-print("Transformation complete. Dimensions and fact tables are saved in 'warehouse/'")
+print("Transformation complete. All dimension and fact tables saved in 'warehouse/' at project root.")
