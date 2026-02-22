@@ -1,0 +1,8 @@
+file,rows,duplicates,nulls
+raw_materials.csv,200,0,0
+flavours.csv,1000,0,0
+recipes.csv,166722,0,111194
+ingredients.csv,300,0,0
+customers.csv,75,0,0
+sales_transactions.csv,50000,0,0
+providers.csv,216,0,0
