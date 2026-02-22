@@ -1,9 +1,10 @@
 import pandas as pd
 import os
 
-SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-PROC = os.path.join(SCRIPT_DIR, "processed")
-WAREHOUSE = os.path.join(SCRIPT_DIR, "warehouse")
+# --- Paths ---
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))  # transform folder
+PROC = os.path.join(SCRIPT_DIR, "..", "processed")       # processed folder (one level up)
+WAREHOUSE = os.path.join(SCRIPT_DIR, "..", "warehouse")  # warehouse folder (one level up)
 os.makedirs(WAREHOUSE, exist_ok=True)
 
 # ---------- Read processed CSVs ----------
