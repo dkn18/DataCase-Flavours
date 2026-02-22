@@ -1,8 +1,8 @@
-file,rows,duplicates,nulls
-raw_materials.csv,200,0,0
-flavours.csv,1000,0,0
-recipes.csv,166722,0,111194
-ingredients.csv,300,0,0
-customers.csv,75,0,0
-sales_transactions.csv,50000,0,0
-providers.csv,216,0,0
+file,rows,duplicates,nulls,load_ts
+raw_materials.csv,200,0,0,2026-02-22 19:52:23.647769
+flavours.csv,1000,0,0,2026-02-22 19:52:23.658632
+recipes.csv,166722,0,111194,2026-02-22 19:52:24.704796
+ingredients.csv,300,0,0,2026-02-22 19:52:24.713527
+customers.csv,75,0,0,2026-02-22 19:52:24.716766
+sales_transactions.csv,50000,0,0,2026-02-22 19:52:24.947524
+providers.csv,216,0,0,2026-02-22 19:52:24.951745
