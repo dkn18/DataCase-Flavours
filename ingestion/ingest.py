@@ -26,7 +26,7 @@ for file in os.listdir(RAW):
             "file": file,
             "rows": len(df),
             "duplicates": df.duplicated().sum(),
-            "nulls": df.isnull().sum().sum()
+            "nulls": df.isnull().sum().sum(),
             "load_ts": datetime.now() 
         })
         print(f"Processed {file}: {len(df)} rows")
