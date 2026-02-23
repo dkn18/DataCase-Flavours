@@ -72,16 +72,19 @@ This project implements a complete ETL pipeline that ingests raw CSV data, perfo
    **Table**	               ||        **Description**
                 
    fact_recipe_composition     ||        Recipe ingredient composition
+   
    fact_sales	               ||        Sales transactions
 
 
    4. **Running the Pipeline**
-      Install dependencies: pip install -r requirements.txt
-      Place raw CSVs in the raw/ folder.
-      Run the full ETL pipeline: python run_pipeline.py
-      Ingests raw → processed (with audit logs)
-      Transforms processed → warehouse (dimensions & facts)
-      Quarantined rows appear in rejected/ if exists
+      1. Install dependencies: pip install -r requirements.txt
+      2. Place raw CSVs in the raw/ folder. (exists already)
+      3. Run the full ETL pipeline: python run_pipeline.py
+               -Ingests raw → processed (with audit logs)
+
+               -Transforms processed → warehouse (dimensions & facts)
+
+               -Quarantined rows appear in rejected/ if exists
                 
 **Data quality:**
 
