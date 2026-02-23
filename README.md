@@ -76,7 +76,7 @@ This project implements a complete ETL pipeline that ingests raw CSV data, perfo
    fact_sales	               ||        Sales transactions
 
 
-   4. **Running the Pipeline**
+4. **Running the Pipeline**
       1. Install dependencies: pip install -r requirements.txt
       2. Place raw CSVs in the raw/ folder. (exists already)
       3. Run the full ETL pipeline: python run_pipeline.py
