@@ -51,13 +51,21 @@ This project implements a complete ETL pipeline that ingests raw CSV data, perfo
    **Dimensions:**
 
    **Table**	        **Key Columns / Notes**
+   
    dim_customer	        customer_id, name, location_city, location_country
+   
    dim_provider	        provider_id, name, country
-   dim_ingredient	        ingredient_id, name
+   
+   dim_ingredient	ingredient_id, name
+   
    dim_raw_material	raw_material_id, name
+   
    dim_flavour	        flavour_id, latest batch description
+   
    dim_recipe	        recipe_id, heat_process, yield
+   
    dim_date	        Derived from sales dates (transaction_date, year, month, quarter)
+   
 
    **Fact tables:**
 
