@@ -1,0 +1,2 @@
+transaction_id,customer_id,flavour_id,quantity_liters,transaction_date,transaction_country,transaction_town,postal_code,amount_dollar,generation_date,batch_number,rejection_reason
+,75,222,47000,2024-02-11,SPAIN,Barcelona,VI6CIO,536000,5/5/24,1,missing_required_key

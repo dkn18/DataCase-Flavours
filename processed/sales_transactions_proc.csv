@@ -1,7 +1,7 @@
 transaction_id,customer_id,flavour_id,quantity_liters,transaction_date,transaction_country,transaction_town,postal_code,amount_dollar,generation_date,batch_number
 0,30,313,80000,10/2/23,INDIA,Mumbai,RX4N4N,856000,5/5/24,1
 1,8,195,15000,8/23/23,INDIA,Mumbai,T0R1V2,1043000,5/5/24,1
-2,75,222,47000,2/11/24,SPAIN,Barcelona,VI6CIO,536000,5/5/24,1
+,75,222,47000,2/11/24,SPAIN,Barcelona,VI6CIO,536000,5/5/24,1
 3,18,168,74000,3/11/23,INDIA,Bangalore,Z6T672,1379000,5/5/24,1
 4,52,305,30000,3/6/23,JAPAN,Kyoto,AF2RGY,1037000,5/5/24,1
 5,44,203,29000,2/6/24,INDIA,Mumbai,ISZU3O,1430000,5/5/24,1
