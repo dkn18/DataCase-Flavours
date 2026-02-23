@@ -6,7 +6,7 @@ This project implements a complete ETL pipeline that ingests raw CSV data, perfo
 
 **Key features:**
 
-- Multi-source raw data ingestion
+- Raw data ingestion
 
 - Automated data quality checks (nulls, duplicates, invalid dates)
 
