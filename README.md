@@ -18,7 +18,7 @@ This project implements a complete ETL pipeline that ingests raw CSV data, perfo
 
 **Folder Structure**
 
-**--DataCase-Flavours
+--DataCase-Flavours
 
         --raw/                       # Original CSVs
     
@@ -34,7 +34,7 @@ This project implements a complete ETL pipeline that ingests raw CSV data, perfo
 
 --requirements.txt
 
---README.md**
+--README.md
 
 
 **Pipeline Layers**
