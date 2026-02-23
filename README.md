@@ -17,11 +17,14 @@ This project implements a complete ETL pipeline that ingests raw CSV data, perfo
 - Output CSVs ready for dashboarding
 
 **Folder Structure**
+
 -DataCase-Flavours
 
     --raw/                       # Original CSVs
+
   
     --ingestion/ingest.py        # Ingest raw → processed
+
   
     --processed/                 # Cleaned files + audit logs (_proc.csv)
   
