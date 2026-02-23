@@ -18,23 +18,23 @@ This project implements a complete ETL pipeline that ingests raw CSV data, perfo
 
 **Folder Structure**
 
---DataCase-Flavours
+**--DataCase-Flavours
 
-    --raw/                       # Original CSVs
+        --raw/                       # Original CSVs
     
-    --ingestion/ingest.py        # Ingest raw → processed
+        --ingestion/ingest.py        # Ingest raw → processed
     
-    --processed/                 # Cleaned files + audit logs (_proc.csv)
+        --processed/                 # Cleaned files + audit logs (_proc.csv)
     
-    --transform/transform.py     # Transform processed → warehouse
+        --transform/transform.py     # Transform processed → warehouse
     
-    --warehouse/                 # Dimension & fact tables 
+        --warehouse/                 # Dimension & fact tables 
     
 --run_pipeline.py  # Orchestrates ingestion + transformation
 
 --requirements.txt
 
---README.md
+--README.md**
 
 
 **Pipeline Layers**
