@@ -28,7 +28,8 @@ This project implements a complete ETL pipeline that ingests raw CSV data, perfo
 -README.md
 
 **Pipeline Layers**
-        1. **Raw Layer** - No transformations applied
+
+1. **Raw Layer** - No transformations applied
                 Original CSVs (landing zone)
 
         2. **Processed Layer** - Cleansed, deduplicated files with audit logs
