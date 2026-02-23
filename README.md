@@ -69,10 +69,10 @@ This project implements a complete ETL pipeline that ingests raw CSV data, perfo
 
    **Fact tables:**
 
-   **Table**	                **Description**
+   **Table**	               ||        **Description**
                 
-   fact_recipe_composition	        Recipe ingredient composition
-   fact_sales	                Sales transactions
+   fact_recipe_composition     ||        Recipe ingredient composition
+   fact_sales	               ||        Sales transactions
 
 
    4. **Running the Pipeline**
